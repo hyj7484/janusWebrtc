@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <script type="text/javascript" src="adapter_Janus.js"></script>
+  <script type="text/javascript" src="jquery_Janus.js"></script>
+  <script type="text/javascript" src="jquery_BlockUI_Janus.js"></script>
+  <script type="text/javascript" src="bootstrap_Janus.js"></script>
+  <script type="text/javascript" src="bootbox_Janus.js"></script>
+  <script type="text/javascript" src="spin_Janus.js"></script>
+   -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.4.0/adapter.min.js" ></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js" ></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+
+  <script type="text/javascript" src="janus.js"></script>
+  <script type="text/javascript" src="setValue.js"></script>
+  <script type="text/javascript" src="call_Screen.js"></script>
+  <script type="text/javascript" src="screensharing.js"></script>
+  <script type="text/javascript" src="mideaRecorder.js"></script>
+  <title> index </title>
+  <script type="text/javascript">
+  </script>
+  <style media="screen">
+    #videoDiv {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+    }
+    #divroom{
+      width: 500px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    #recordcheck{
+      background-color: black;
+    }
+  </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="">
+    <button type="button" onclick="create()"> create </button>
+    <button type="button" onclick="join()"> join </button>
+    <input type="text" id="roomNumber">
+    <button type="button" onclick="setNum()"> setNumber </button>
+  </div>
+
+  <div id="recordcheck">
+    Recorde
+  </div>
+
+  <div class="">
+    <button type="button" id="start" onclick="startJanusGate()"> start </button>
+    <br><br>
+  </div>
+  <div id="divroom">
+    <p id="roomId"></p>
+  </div>
+  <div id="videoDiv">
+  </div>
+</body>
+
+</html>
